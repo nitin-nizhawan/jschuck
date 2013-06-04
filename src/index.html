@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>JSChuck - Chuck Interpreter in Javascript</title>
+<script src="jschuck.js" ></script>
+<script>
+function executeSrc(){
+  var code = document.querySelector('textarea');
+console.log(code.value);
+  console.log(jschuck);    
+ try{
+	 var jscparser = new jschuck.Parser();
+	 jscparser.parse(code.value);
+ } catch(e){
+	 document.getElementById('dbg').value=e;
+ }
+}
+</script>
+</head>
+<body>
+<textarea rows=30 cols=90>
+ SinOsc s => dac;
+ 220 => s.freq;
+ 1:s => now; 
+</textarea>
+<textarea id="dbg" rows=20 cols=20></textarea>
+
+<input type=button value="Execute" onclick="executeSrc();" />
+</body>
+</html>
