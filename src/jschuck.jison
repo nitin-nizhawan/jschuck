@@ -12,6 +12,7 @@
 "->"                  return 'ARROW_RIGHT'
 "<-"                  return 'ARROW_LEFT'
 ","                   return 'COMMA'
+";"                   return 'SEMICOLON'
 <<EOF>>               return 'EOF'
 .                     return 'INVALID'
 
@@ -25,13 +26,12 @@
 %right '!'
 %right '%'
 %left UMINUS
-%right COMMA
 %start program_section
 
 %% /* language grammar */
 
 program_section
-    : statement_list
+    : statement_list EOF
         { console.log($1); }
     ;
 statement_list
@@ -62,5 +62,7 @@ arrow_expression
 var_decl_list
     : ID
        { $$ = $1; }
+    | NUM
+       { $$=$1;}
     ;
 

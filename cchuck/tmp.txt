@@ -1,0 +1,466 @@
+/tmp/cciLrHT3.o: In function `type_engine_check_exp_primary(Chuck_Env*, a_Exp_Primary_*)':
+chuck_type.cpp:(.text+0x7adf): undefined reference to `g_t_dac'
+chuck_type.cpp:(.text+0x7b13): undefined reference to `g_t_adc'
+/tmp/cciLrHT3.o: In function `type_engine_add_dll(Chuck_Env*, Chuck_DLL*, std::string const&)':
+chuck_type.cpp:(.text+0xeea7): undefined reference to `Chuck_DLL::query()'
+chuck_type.cpp:(.text+0xf4c1): undefined reference to `Chuck_DLL::name() const'
+/tmp/cciLrHT3.o: In function `type_engine_add_dll2(Chuck_Env*, Chuck_DLL*, std::string const&)':
+chuck_type.cpp:(.text+0xf655): undefined reference to `Chuck_DLL::query()'
+chuck_type.cpp:(.text+0xfb0f): undefined reference to `Chuck_DLL::name() const'
+/tmp/ccJ4UidN.o: In function `Chuck_VM_Shred::initialize(Chuck_VM_Code*, unsigned long, unsigned long)':
+chuck_vm.cpp:(.text+0x8b4): undefined reference to `initialize_object(Chuck_Object*, Chuck_Type*)'
+/tmp/ccJ4UidN.o: In function `Chuck_VM_Shred::shutdown()':
+chuck_vm.cpp:(.text+0x948): undefined reference to `Chuck_UGen::disconnect(unsigned long)'
+/tmp/ccIPHAjA.o: In function `emit_engine_emit_op_chuck(Chuck_Emitter*, a_Exp_*, a_Exp_*, a_Exp_Binary_*)':
+chuck_emit.cpp:(.text+0x50ce): undefined reference to `Chuck_Instr_UGen_Link::Chuck_Instr_UGen_Link(unsigned long)'
+/tmp/ccIPHAjA.o: In function `emit_engine_emit_op_upchuck(Chuck_Emitter*, a_Exp_*, a_Exp_*)':
+chuck_emit.cpp:(.text+0x56e9): undefined reference to `Chuck_Instr_UGen_Link::Chuck_Instr_UGen_Link(unsigned long)'
+/tmp/ccIPHAjA.o: In function `emit_engine_emit_exp_primary(Chuck_Emitter*, a_Exp_Primary_*)':
+chuck_emit.cpp:(.text+0x657a): undefined reference to `initialize_object(Chuck_Object*, Chuck_Type*)'
+chuck_emit.cpp:(.text+0x6786): undefined reference to `Chuck_Instr_Gack::Chuck_Instr_Gack(std::vector<Chuck_Type*, std::allocator<Chuck_Type*> > const&)'
+/tmp/ccIPHAjA.o: In function `emit_engine_emit_array_lit(Chuck_Emitter*, a_Array_Sub_*)':
+chuck_emit.cpp:(.text+0x6910): undefined reference to `Chuck_Instr_Array_Init::Chuck_Instr_Array_Init(Chuck_Type*, long)'
+/tmp/ccIPHAjA.o: In function `emit_engine_instantiate_object(Chuck_Emitter*, Chuck_Type*, a_Array_Sub_*, unsigned long)':
+chuck_emit.cpp:(.text+0x854a): undefined reference to `Chuck_Instr_Array_Alloc::Chuck_Instr_Array_Alloc(unsigned long, Chuck_Type*, unsigned long, unsigned long)'
+/tmp/ccIPHAjA.o: In function `Chuck_Emitter::addref_on_scope()':
+chuck_emit.cpp:(.text+0x9f80): undefined reference to `Chuck_Frame::get_scope(std::vector<Chuck_Local*, std::allocator<Chuck_Local*> >&) const'
+/tmp/ccIPHAjA.o: In function `Chuck_Emitter::pop_scope()':
+chuck_emit.cpp:(.text+0xa072): undefined reference to `Chuck_Frame::pop_scope(std::vector<Chuck_Local*, std::allocator<Chuck_Local*> >&)'
+/tmp/ccIPHAjA.o: In function `Chuck_Code::Chuck_Code()':
+chuck_emit.cpp:(.text._ZN10Chuck_CodeC2Ev[_ZN10Chuck_CodeC5Ev]+0x94): undefined reference to `Chuck_Frame::Chuck_Frame()'
+/tmp/ccIPHAjA.o: In function `Chuck_Emitter::push_scope()':
+chuck_emit.cpp:(.text._ZN13Chuck_Emitter10push_scopeEv[_ZN13Chuck_Emitter10push_scopeEv]+0x42): undefined reference to `Chuck_Frame::push_scope()'
+/tmp/ccIPHAjA.o: In function `Chuck_Emitter::alloc_local(unsigned long, std::string const&, unsigned long, unsigned long)':
+chuck_emit.cpp:(.text._ZN13Chuck_Emitter11alloc_localEmRKSsmm[_ZN13Chuck_Emitter11alloc_localEmRKSsmm]+0x65): undefined reference to `Chuck_Frame::alloc_local(unsigned long, std::string const&, unsigned long, unsigned long)'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr::~Chuck_Instr()':
+chuck_emit.cpp:(.text._ZN11Chuck_InstrD2Ev[_ZN11Chuck_InstrD5Ev]+0x13): undefined reference to `vtable for Chuck_Instr'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr::Chuck_Instr()':
+chuck_emit.cpp:(.text._ZN11Chuck_InstrC2Ev[_ZN11Chuck_InstrC5Ev]+0xf): undefined reference to `vtable for Chuck_Instr'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Dec_int_Addr::Chuck_Instr_Dec_int_Addr(unsigned long)':
+chuck_emit.cpp:(.text._ZN24Chuck_Instr_Dec_int_AddrC2Em[_ZN24Chuck_Instr_Dec_int_AddrC5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Dec_int_Addr'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Branch_Eq_int::Chuck_Instr_Branch_Eq_int(unsigned long)':
+chuck_emit.cpp:(.text._ZN25Chuck_Instr_Branch_Eq_intC2Em[_ZN25Chuck_Instr_Branch_Eq_intC5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Branch_Eq_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Branch_Neq_int::Chuck_Instr_Branch_Neq_int(unsigned long)':
+chuck_emit.cpp:(.text._ZN26Chuck_Instr_Branch_Neq_intC2Em[_ZN26Chuck_Instr_Branch_Neq_intC5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Branch_Neq_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Branch_Eq_double::Chuck_Instr_Branch_Eq_double(unsigned long)':
+chuck_emit.cpp:(.text._ZN28Chuck_Instr_Branch_Eq_doubleC2Em[_ZN28Chuck_Instr_Branch_Eq_doubleC5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Branch_Eq_double'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Branch_Neq_double::Chuck_Instr_Branch_Neq_double(unsigned long)':
+chuck_emit.cpp:(.text._ZN29Chuck_Instr_Branch_Neq_doubleC2Em[_ZN29Chuck_Instr_Branch_Neq_doubleC5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Branch_Neq_double'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Branch_Eq_int_IO_good::Chuck_Instr_Branch_Eq_int_IO_good(unsigned long)':
+chuck_emit.cpp:(.text._ZN33Chuck_Instr_Branch_Eq_int_IO_goodC2Em[_ZN33Chuck_Instr_Branch_Eq_int_IO_goodC5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Branch_Eq_int_IO_good'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Branch_Neq_int_IO_good::Chuck_Instr_Branch_Neq_int_IO_good(unsigned long)':
+chuck_emit.cpp:(.text._ZN34Chuck_Instr_Branch_Neq_int_IO_goodC2Em[_ZN34Chuck_Instr_Branch_Neq_int_IO_goodC5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Branch_Neq_int_IO_good'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Goto::Chuck_Instr_Goto(unsigned long)':
+chuck_emit.cpp:(.text._ZN16Chuck_Instr_GotoC2Em[_ZN16Chuck_Instr_GotoC5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Goto'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Reg_Pop_Word4::Chuck_Instr_Reg_Pop_Word4(unsigned long)':
+chuck_emit.cpp:(.text._ZN25Chuck_Instr_Reg_Pop_Word4C2Em[_ZN25Chuck_Instr_Reg_Pop_Word4C5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Reg_Pop_Word4'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Reg_Push_Imm::Chuck_Instr_Reg_Push_Imm(unsigned long)':
+chuck_emit.cpp:(.text._ZN24Chuck_Instr_Reg_Push_ImmC2Em[_ZN24Chuck_Instr_Reg_Push_ImmC5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Reg_Push_Imm'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Reg_Push_Imm2::Chuck_Instr_Reg_Push_Imm2(double)':
+chuck_emit.cpp:(.text._ZN25Chuck_Instr_Reg_Push_Imm2C2Ed[_ZN25Chuck_Instr_Reg_Push_Imm2C5Ed]+0x24): undefined reference to `vtable for Chuck_Instr_Reg_Push_Imm2'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Reg_Push_Mem::Chuck_Instr_Reg_Push_Mem(unsigned long, unsigned long)':
+chuck_emit.cpp:(.text._ZN24Chuck_Instr_Reg_Push_MemC2Emm[_ZN24Chuck_Instr_Reg_Push_MemC5Emm]+0x27): undefined reference to `vtable for Chuck_Instr_Reg_Push_Mem'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Reg_Push_Mem2::Chuck_Instr_Reg_Push_Mem2(unsigned long, unsigned long)':
+chuck_emit.cpp:(.text._ZN25Chuck_Instr_Reg_Push_Mem2C2Emm[_ZN25Chuck_Instr_Reg_Push_Mem2C5Emm]+0x27): undefined reference to `vtable for Chuck_Instr_Reg_Push_Mem2'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Reg_Push_Mem4::Chuck_Instr_Reg_Push_Mem4(unsigned long, unsigned long)':
+chuck_emit.cpp:(.text._ZN25Chuck_Instr_Reg_Push_Mem4C2Emm[_ZN25Chuck_Instr_Reg_Push_Mem4C5Emm]+0x27): undefined reference to `vtable for Chuck_Instr_Reg_Push_Mem4'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Reg_Push_Mem_Addr::Chuck_Instr_Reg_Push_Mem_Addr(unsigned long, unsigned long)':
+chuck_emit.cpp:(.text._ZN29Chuck_Instr_Reg_Push_Mem_AddrC2Emm[_ZN29Chuck_Instr_Reg_Push_Mem_AddrC5Emm]+0x27): undefined reference to `vtable for Chuck_Instr_Reg_Push_Mem_Addr'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Reg_Push_Deref::Chuck_Instr_Reg_Push_Deref(unsigned long)':
+chuck_emit.cpp:(.text._ZN26Chuck_Instr_Reg_Push_DerefC2Em[_ZN26Chuck_Instr_Reg_Push_DerefC5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Reg_Push_Deref'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Mem_Set_Imm::Chuck_Instr_Mem_Set_Imm(unsigned long, unsigned long)':
+chuck_emit.cpp:(.text._ZN23Chuck_Instr_Mem_Set_ImmC2Emm[_ZN23Chuck_Instr_Mem_Set_ImmC5Emm]+0x27): undefined reference to `vtable for Chuck_Instr_Mem_Set_Imm'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Mem_Push_Imm::Chuck_Instr_Mem_Push_Imm(unsigned long)':
+chuck_emit.cpp:(.text._ZN24Chuck_Instr_Mem_Push_ImmC2Em[_ZN24Chuck_Instr_Mem_Push_ImmC5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Mem_Push_Imm'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Alloc_Word::Chuck_Instr_Alloc_Word(unsigned long, unsigned long)':
+chuck_emit.cpp:(.text._ZN22Chuck_Instr_Alloc_WordC2Emm[_ZN22Chuck_Instr_Alloc_WordC5Emm]+0x27): undefined reference to `vtable for Chuck_Instr_Alloc_Word'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Alloc_Word2::Chuck_Instr_Alloc_Word2(unsigned long)':
+chuck_emit.cpp:(.text._ZN23Chuck_Instr_Alloc_Word2C2Em[_ZN23Chuck_Instr_Alloc_Word2C5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Alloc_Word2'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Alloc_Word4::Chuck_Instr_Alloc_Word4(unsigned long)':
+chuck_emit.cpp:(.text._ZN23Chuck_Instr_Alloc_Word4C2Em[_ZN23Chuck_Instr_Alloc_Word4C5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Alloc_Word4'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Alloc_Member_Word::Chuck_Instr_Alloc_Member_Word(unsigned long)':
+chuck_emit.cpp:(.text._ZN29Chuck_Instr_Alloc_Member_WordC2Em[_ZN29Chuck_Instr_Alloc_Member_WordC5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Alloc_Member_Word'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Alloc_Member_Word2::Chuck_Instr_Alloc_Member_Word2(unsigned long)':
+chuck_emit.cpp:(.text._ZN30Chuck_Instr_Alloc_Member_Word2C2Em[_ZN30Chuck_Instr_Alloc_Member_Word2C5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Alloc_Member_Word2'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Alloc_Member_Word4::Chuck_Instr_Alloc_Member_Word4(unsigned long)':
+chuck_emit.cpp:(.text._ZN30Chuck_Instr_Alloc_Member_Word4C2Em[_ZN30Chuck_Instr_Alloc_Member_Word4C5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Alloc_Member_Word4'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Instantiate_Object::Chuck_Instr_Instantiate_Object(Chuck_Type*)':
+chuck_emit.cpp:(.text._ZN30Chuck_Instr_Instantiate_ObjectC2EP10Chuck_Type[_ZN30Chuck_Instr_Instantiate_ObjectC5EP10Chuck_Type]+0x23): undefined reference to `vtable for Chuck_Instr_Instantiate_Object'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Pre_Constructor::Chuck_Instr_Pre_Constructor(Chuck_VM_Code*, unsigned long)':
+chuck_emit.cpp:(.text._ZN27Chuck_Instr_Pre_ConstructorC2EP13Chuck_VM_Codem[_ZN27Chuck_Instr_Pre_ConstructorC5EP13Chuck_VM_Codem]+0x27): undefined reference to `vtable for Chuck_Instr_Pre_Constructor'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Pre_Ctor_Array_Top::Chuck_Instr_Pre_Ctor_Array_Top(Chuck_Type*)':
+chuck_emit.cpp:(.text._ZN30Chuck_Instr_Pre_Ctor_Array_TopC2EP10Chuck_Type[_ZN30Chuck_Instr_Pre_Ctor_Array_TopC5EP10Chuck_Type]+0x23): undefined reference to `vtable for Chuck_Instr_Pre_Ctor_Array_Top'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Array_Append::Chuck_Instr_Array_Append(unsigned long)':
+chuck_emit.cpp:(.text._ZN24Chuck_Instr_Array_AppendC2Em[_ZN24Chuck_Instr_Array_AppendC5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Array_Append'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_AddRef_Object2::Chuck_Instr_AddRef_Object2(unsigned long)':
+chuck_emit.cpp:(.text._ZN26Chuck_Instr_AddRef_Object2C2Em[_ZN26Chuck_Instr_AddRef_Object2C5Em]+0x23): undefined reference to `vtable for Chuck_Instr_AddRef_Object2'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Release_Object2::Chuck_Instr_Release_Object2(unsigned long)':
+chuck_emit.cpp:(.text._ZN27Chuck_Instr_Release_Object2C2Em[_ZN27Chuck_Instr_Release_Object2C5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Release_Object2'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Func_Call_Member::Chuck_Instr_Func_Call_Member(unsigned long)':
+chuck_emit.cpp:(.text._ZN28Chuck_Instr_Func_Call_MemberC2Em[_ZN28Chuck_Instr_Func_Call_MemberC5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Func_Call_Member'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Func_Call_Static::Chuck_Instr_Func_Call_Static(unsigned long)':
+chuck_emit.cpp:(.text._ZN28Chuck_Instr_Func_Call_StaticC2Em[_ZN28Chuck_Instr_Func_Call_StaticC5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Func_Call_Static'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Spork::Chuck_Instr_Spork(unsigned long)':
+chuck_emit.cpp:(.text._ZN17Chuck_Instr_SporkC2Em[_ZN17Chuck_Instr_SporkC5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Spork'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Array_Access::Chuck_Instr_Array_Access(unsigned long, unsigned long, unsigned long)':
+chuck_emit.cpp:(.text._ZN24Chuck_Instr_Array_AccessC2Emmm[_ZN24Chuck_Instr_Array_AccessC5Emmm]+0x2b): undefined reference to `vtable for Chuck_Instr_Array_Access'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Array_Map_Access::Chuck_Instr_Array_Map_Access(unsigned long, unsigned long)':
+chuck_emit.cpp:(.text._ZN28Chuck_Instr_Array_Map_AccessC2Emm[_ZN28Chuck_Instr_Array_Map_AccessC5Emm]+0x27): undefined reference to `vtable for Chuck_Instr_Array_Map_Access'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Array_Access_Multi::Chuck_Instr_Array_Access_Multi(unsigned long, unsigned long, unsigned long)':
+chuck_emit.cpp:(.text._ZN30Chuck_Instr_Array_Access_MultiC2Emmm[_ZN30Chuck_Instr_Array_Access_MultiC5Emmm]+0x2c): undefined reference to `vtable for Chuck_Instr_Array_Access_Multi'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Dot_Member_Data::Chuck_Instr_Dot_Member_Data(unsigned long, unsigned long, unsigned long)':
+chuck_emit.cpp:(.text._ZN27Chuck_Instr_Dot_Member_DataC2Emmm[_ZN27Chuck_Instr_Dot_Member_DataC5Emmm]+0x2b): undefined reference to `vtable for Chuck_Instr_Dot_Member_Data'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Dot_Member_Func::Chuck_Instr_Dot_Member_Func(unsigned long)':
+chuck_emit.cpp:(.text._ZN27Chuck_Instr_Dot_Member_FuncC2Em[_ZN27Chuck_Instr_Dot_Member_FuncC5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Dot_Member_Func'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Dot_Static_Data::Chuck_Instr_Dot_Static_Data(unsigned long, unsigned long, unsigned long, unsigned long)':
+chuck_emit.cpp:(.text._ZN27Chuck_Instr_Dot_Static_DataC2Emmmm[_ZN27Chuck_Instr_Dot_Static_DataC5Emmmm]+0x2f): undefined reference to `vtable for Chuck_Instr_Dot_Static_Data'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Dot_Static_Import_Data::Chuck_Instr_Dot_Static_Import_Data(void*, unsigned long, unsigned long)':
+chuck_emit.cpp:(.text._ZN34Chuck_Instr_Dot_Static_Import_DataC2EPvmm[_ZN34Chuck_Instr_Dot_Static_Import_DataC5EPvmm]+0x2b): undefined reference to `vtable for Chuck_Instr_Dot_Static_Import_Data'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Dot_Static_Func::Chuck_Instr_Dot_Static_Func(Chuck_Func*)':
+chuck_emit.cpp:(.text._ZN27Chuck_Instr_Dot_Static_FuncC2EP10Chuck_Func[_ZN27Chuck_Instr_Dot_Static_FuncC5EP10Chuck_Func]+0x23): undefined reference to `vtable for Chuck_Instr_Dot_Static_Func'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Dot_Cmp_First::Chuck_Instr_Dot_Cmp_First(unsigned long, unsigned long)':
+chuck_emit.cpp:(.text._ZN25Chuck_Instr_Dot_Cmp_FirstC2Emm[_ZN25Chuck_Instr_Dot_Cmp_FirstC5Emm]+0x27): undefined reference to `vtable for Chuck_Instr_Dot_Cmp_First'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Dot_Cmp_Second::Chuck_Instr_Dot_Cmp_Second(unsigned long, unsigned long)':
+chuck_emit.cpp:(.text._ZN26Chuck_Instr_Dot_Cmp_SecondC2Emm[_ZN26Chuck_Instr_Dot_Cmp_SecondC5Emm]+0x27): undefined reference to `vtable for Chuck_Instr_Dot_Cmp_Second'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Op_string::Chuck_Instr_Op_string(unsigned long)':
+chuck_emit.cpp:(.text._ZN21Chuck_Instr_Op_stringC2Em[_ZN21Chuck_Instr_Op_stringC5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Op_string'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Init_Loop_Counter::Chuck_Instr_Init_Loop_Counter(unsigned long)':
+chuck_emit.cpp:(.text._ZN29Chuck_Instr_Init_Loop_CounterC2Em[_ZN29Chuck_Instr_Init_Loop_CounterC5Em]+0x23): undefined reference to `vtable for Chuck_Instr_Init_Loop_Counter'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_EOC::Chuck_Instr_EOC()':
+chuck_emit.cpp:(.text._ZN15Chuck_Instr_EOCC2Ev[_ZN15Chuck_Instr_EOCC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_EOC'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Reg_Pop_Word::Chuck_Instr_Reg_Pop_Word()':
+chuck_emit.cpp:(.text._ZN24Chuck_Instr_Reg_Pop_WordC2Ev[_ZN24Chuck_Instr_Reg_Pop_WordC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Reg_Pop_Word'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Reg_Pop_Word2::Chuck_Instr_Reg_Pop_Word2()':
+chuck_emit.cpp:(.text._ZN25Chuck_Instr_Reg_Pop_Word2C2Ev[_ZN25Chuck_Instr_Reg_Pop_Word2C5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Reg_Pop_Word2'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Reg_Pop_Word3::Chuck_Instr_Reg_Pop_Word3()':
+chuck_emit.cpp:(.text._ZN25Chuck_Instr_Reg_Pop_Word3C2Ev[_ZN25Chuck_Instr_Reg_Pop_Word3C5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Reg_Pop_Word3'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Reg_AddRef_Object3::Chuck_Instr_Reg_AddRef_Object3()':
+chuck_emit.cpp:(.text._ZN30Chuck_Instr_Reg_AddRef_Object3C2Ev[_ZN30Chuck_Instr_Reg_AddRef_Object3C5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Reg_AddRef_Object3'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Add_double::Chuck_Instr_Add_double()':
+chuck_emit.cpp:(.text._ZN22Chuck_Instr_Add_doubleC2Ev[_ZN22Chuck_Instr_Add_doubleC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Add_double'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Add_string::Chuck_Instr_Add_string()':
+chuck_emit.cpp:(.text._ZN22Chuck_Instr_Add_stringC2Ev[_ZN22Chuck_Instr_Add_stringC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Add_string'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Add_string_int::Chuck_Instr_Add_string_int()':
+chuck_emit.cpp:(.text._ZN26Chuck_Instr_Add_string_intC2Ev[_ZN26Chuck_Instr_Add_string_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Add_string_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Add_string_float::Chuck_Instr_Add_string_float()':
+chuck_emit.cpp:(.text._ZN28Chuck_Instr_Add_string_floatC2Ev[_ZN28Chuck_Instr_Add_string_floatC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Add_string_float'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Add_int_string::Chuck_Instr_Add_int_string()':
+chuck_emit.cpp:(.text._ZN26Chuck_Instr_Add_int_stringC2Ev[_ZN26Chuck_Instr_Add_int_stringC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Add_int_string'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Add_float_string::Chuck_Instr_Add_float_string()':
+chuck_emit.cpp:(.text._ZN28Chuck_Instr_Add_float_stringC2Ev[_ZN28Chuck_Instr_Add_float_stringC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Add_float_string'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Add_int::Chuck_Instr_Add_int()':
+chuck_emit.cpp:(.text._ZN19Chuck_Instr_Add_intC2Ev[_ZN19Chuck_Instr_Add_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Add_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Add_complex::Chuck_Instr_Add_complex()':
+chuck_emit.cpp:(.text._ZN23Chuck_Instr_Add_complexC2Ev[_ZN23Chuck_Instr_Add_complexC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Add_complex'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Add_polar::Chuck_Instr_Add_polar()':
+chuck_emit.cpp:(.text._ZN21Chuck_Instr_Add_polarC2Ev[_ZN21Chuck_Instr_Add_polarC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Add_polar'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Time_Advance::Chuck_Instr_Time_Advance()':
+chuck_emit.cpp:(.text._ZN24Chuck_Instr_Time_AdvanceC2Ev[_ZN24Chuck_Instr_Time_AdvanceC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Time_Advance'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Add_double_Assign::Chuck_Instr_Add_double_Assign()':
+chuck_emit.cpp:(.text._ZN29Chuck_Instr_Add_double_AssignC2Ev[_ZN29Chuck_Instr_Add_double_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Add_double_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Add_string_Assign::Chuck_Instr_Add_string_Assign()':
+chuck_emit.cpp:(.text._ZN29Chuck_Instr_Add_string_AssignC2Ev[_ZN29Chuck_Instr_Add_string_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Add_string_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Add_int_string_Assign::Chuck_Instr_Add_int_string_Assign()':
+chuck_emit.cpp:(.text._ZN33Chuck_Instr_Add_int_string_AssignC2Ev[_ZN33Chuck_Instr_Add_int_string_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Add_int_string_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Add_float_string_Assign::Chuck_Instr_Add_float_string_Assign()':
+chuck_emit.cpp:(.text._ZN35Chuck_Instr_Add_float_string_AssignC2Ev[_ZN35Chuck_Instr_Add_float_string_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Add_float_string_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Add_int_Assign::Chuck_Instr_Add_int_Assign()':
+chuck_emit.cpp:(.text._ZN26Chuck_Instr_Add_int_AssignC2Ev[_ZN26Chuck_Instr_Add_int_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Add_int_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Add_complex_Assign::Chuck_Instr_Add_complex_Assign()':
+chuck_emit.cpp:(.text._ZN30Chuck_Instr_Add_complex_AssignC2Ev[_ZN30Chuck_Instr_Add_complex_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Add_complex_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Add_polar_Assign::Chuck_Instr_Add_polar_Assign()':
+chuck_emit.cpp:(.text._ZN28Chuck_Instr_Add_polar_AssignC2Ev[_ZN28Chuck_Instr_Add_polar_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Add_polar_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Minus_double::Chuck_Instr_Minus_double()':
+chuck_emit.cpp:(.text._ZN24Chuck_Instr_Minus_doubleC2Ev[_ZN24Chuck_Instr_Minus_doubleC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Minus_double'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Minus_int::Chuck_Instr_Minus_int()':
+chuck_emit.cpp:(.text._ZN21Chuck_Instr_Minus_intC2Ev[_ZN21Chuck_Instr_Minus_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Minus_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Minus_complex::Chuck_Instr_Minus_complex()':
+chuck_emit.cpp:(.text._ZN25Chuck_Instr_Minus_complexC2Ev[_ZN25Chuck_Instr_Minus_complexC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Minus_complex'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Minus_polar::Chuck_Instr_Minus_polar()':
+chuck_emit.cpp:(.text._ZN23Chuck_Instr_Minus_polarC2Ev[_ZN23Chuck_Instr_Minus_polarC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Minus_polar'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Minus_double_Assign::Chuck_Instr_Minus_double_Assign()':
+chuck_emit.cpp:(.text._ZN31Chuck_Instr_Minus_double_AssignC2Ev[_ZN31Chuck_Instr_Minus_double_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Minus_double_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Minus_int_Assign::Chuck_Instr_Minus_int_Assign()':
+chuck_emit.cpp:(.text._ZN28Chuck_Instr_Minus_int_AssignC2Ev[_ZN28Chuck_Instr_Minus_int_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Minus_int_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Minus_complex_Assign::Chuck_Instr_Minus_complex_Assign()':
+chuck_emit.cpp:(.text._ZN32Chuck_Instr_Minus_complex_AssignC2Ev[_ZN32Chuck_Instr_Minus_complex_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Minus_complex_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Minus_polar_Assign::Chuck_Instr_Minus_polar_Assign()':
+chuck_emit.cpp:(.text._ZN30Chuck_Instr_Minus_polar_AssignC2Ev[_ZN30Chuck_Instr_Minus_polar_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Minus_polar_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Times_int::Chuck_Instr_Times_int()':
+chuck_emit.cpp:(.text._ZN21Chuck_Instr_Times_intC2Ev[_ZN21Chuck_Instr_Times_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Times_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Times_double::Chuck_Instr_Times_double()':
+chuck_emit.cpp:(.text._ZN24Chuck_Instr_Times_doubleC2Ev[_ZN24Chuck_Instr_Times_doubleC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Times_double'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Times_complex::Chuck_Instr_Times_complex()':
+chuck_emit.cpp:(.text._ZN25Chuck_Instr_Times_complexC2Ev[_ZN25Chuck_Instr_Times_complexC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Times_complex'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Times_polar::Chuck_Instr_Times_polar()':
+chuck_emit.cpp:(.text._ZN23Chuck_Instr_Times_polarC2Ev[_ZN23Chuck_Instr_Times_polarC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Times_polar'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Times_int_Assign::Chuck_Instr_Times_int_Assign()':
+chuck_emit.cpp:(.text._ZN28Chuck_Instr_Times_int_AssignC2Ev[_ZN28Chuck_Instr_Times_int_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Times_int_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Times_double_Assign::Chuck_Instr_Times_double_Assign()':
+chuck_emit.cpp:(.text._ZN31Chuck_Instr_Times_double_AssignC2Ev[_ZN31Chuck_Instr_Times_double_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Times_double_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Times_complex_Assign::Chuck_Instr_Times_complex_Assign()':
+chuck_emit.cpp:(.text._ZN32Chuck_Instr_Times_complex_AssignC2Ev[_ZN32Chuck_Instr_Times_complex_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Times_complex_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Times_polar_Assign::Chuck_Instr_Times_polar_Assign()':
+chuck_emit.cpp:(.text._ZN30Chuck_Instr_Times_polar_AssignC2Ev[_ZN30Chuck_Instr_Times_polar_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Times_polar_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Divide_double::Chuck_Instr_Divide_double()':
+chuck_emit.cpp:(.text._ZN25Chuck_Instr_Divide_doubleC2Ev[_ZN25Chuck_Instr_Divide_doubleC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Divide_double'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Divide_int::Chuck_Instr_Divide_int()':
+chuck_emit.cpp:(.text._ZN22Chuck_Instr_Divide_intC2Ev[_ZN22Chuck_Instr_Divide_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Divide_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Divide_complex::Chuck_Instr_Divide_complex()':
+chuck_emit.cpp:(.text._ZN26Chuck_Instr_Divide_complexC2Ev[_ZN26Chuck_Instr_Divide_complexC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Divide_complex'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Divide_polar::Chuck_Instr_Divide_polar()':
+chuck_emit.cpp:(.text._ZN24Chuck_Instr_Divide_polarC2Ev[_ZN24Chuck_Instr_Divide_polarC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Divide_polar'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Divide_double_Assign::Chuck_Instr_Divide_double_Assign()':
+chuck_emit.cpp:(.text._ZN32Chuck_Instr_Divide_double_AssignC2Ev[_ZN32Chuck_Instr_Divide_double_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Divide_double_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Divide_int_Assign::Chuck_Instr_Divide_int_Assign()':
+chuck_emit.cpp:(.text._ZN29Chuck_Instr_Divide_int_AssignC2Ev[_ZN29Chuck_Instr_Divide_int_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Divide_int_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Divide_complex_Assign::Chuck_Instr_Divide_complex_Assign()':
+chuck_emit.cpp:(.text._ZN33Chuck_Instr_Divide_complex_AssignC2Ev[_ZN33Chuck_Instr_Divide_complex_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Divide_complex_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Divide_polar_Assign::Chuck_Instr_Divide_polar_Assign()':
+chuck_emit.cpp:(.text._ZN31Chuck_Instr_Divide_polar_AssignC2Ev[_ZN31Chuck_Instr_Divide_polar_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Divide_polar_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Binary_Or::Chuck_Instr_Binary_Or()':
+chuck_emit.cpp:(.text._ZN21Chuck_Instr_Binary_OrC2Ev[_ZN21Chuck_Instr_Binary_OrC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Binary_Or'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Binary_Or_Assign::Chuck_Instr_Binary_Or_Assign()':
+chuck_emit.cpp:(.text._ZN28Chuck_Instr_Binary_Or_AssignC2Ev[_ZN28Chuck_Instr_Binary_Or_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Binary_Or_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Binary_And::Chuck_Instr_Binary_And()':
+chuck_emit.cpp:(.text._ZN22Chuck_Instr_Binary_AndC2Ev[_ZN22Chuck_Instr_Binary_AndC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Binary_And'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Binary_And_Assign::Chuck_Instr_Binary_And_Assign()':
+chuck_emit.cpp:(.text._ZN29Chuck_Instr_Binary_And_AssignC2Ev[_ZN29Chuck_Instr_Binary_And_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Binary_And_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Binary_Shift_Left::Chuck_Instr_Binary_Shift_Left()':
+chuck_emit.cpp:(.text._ZN29Chuck_Instr_Binary_Shift_LeftC2Ev[_ZN29Chuck_Instr_Binary_Shift_LeftC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Binary_Shift_Left'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Binary_Shift_Left_Assign::Chuck_Instr_Binary_Shift_Left_Assign()':
+chuck_emit.cpp:(.text._ZN36Chuck_Instr_Binary_Shift_Left_AssignC2Ev[_ZN36Chuck_Instr_Binary_Shift_Left_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Binary_Shift_Left_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Binary_Shift_Right::Chuck_Instr_Binary_Shift_Right()':
+chuck_emit.cpp:(.text._ZN30Chuck_Instr_Binary_Shift_RightC2Ev[_ZN30Chuck_Instr_Binary_Shift_RightC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Binary_Shift_Right'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Binary_Shift_Right_Assign::Chuck_Instr_Binary_Shift_Right_Assign()':
+chuck_emit.cpp:(.text._ZN37Chuck_Instr_Binary_Shift_Right_AssignC2Ev[_ZN37Chuck_Instr_Binary_Shift_Right_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Binary_Shift_Right_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Mod_double::Chuck_Instr_Mod_double()':
+chuck_emit.cpp:(.text._ZN22Chuck_Instr_Mod_doubleC2Ev[_ZN22Chuck_Instr_Mod_doubleC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Mod_double'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Mod_int::Chuck_Instr_Mod_int()':
+chuck_emit.cpp:(.text._ZN19Chuck_Instr_Mod_intC2Ev[_ZN19Chuck_Instr_Mod_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Mod_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Mod_double_Assign::Chuck_Instr_Mod_double_Assign()':
+chuck_emit.cpp:(.text._ZN29Chuck_Instr_Mod_double_AssignC2Ev[_ZN29Chuck_Instr_Mod_double_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Mod_double_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Mod_int_Assign::Chuck_Instr_Mod_int_Assign()':
+chuck_emit.cpp:(.text._ZN26Chuck_Instr_Mod_int_AssignC2Ev[_ZN26Chuck_Instr_Mod_int_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Mod_int_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Binary_Xor::Chuck_Instr_Binary_Xor()':
+chuck_emit.cpp:(.text._ZN22Chuck_Instr_Binary_XorC2Ev[_ZN22Chuck_Instr_Binary_XorC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Binary_Xor'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Binary_Xor_Assign::Chuck_Instr_Binary_Xor_Assign()':
+chuck_emit.cpp:(.text._ZN29Chuck_Instr_Binary_Xor_AssignC2Ev[_ZN29Chuck_Instr_Binary_Xor_AssignC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Binary_Xor_Assign'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Eq_int::Chuck_Instr_Eq_int()':
+chuck_emit.cpp:(.text._ZN18Chuck_Instr_Eq_intC2Ev[_ZN18Chuck_Instr_Eq_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Eq_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Eq_double::Chuck_Instr_Eq_double()':
+chuck_emit.cpp:(.text._ZN21Chuck_Instr_Eq_doubleC2Ev[_ZN21Chuck_Instr_Eq_doubleC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Eq_double'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Neq_int::Chuck_Instr_Neq_int()':
+chuck_emit.cpp:(.text._ZN19Chuck_Instr_Neq_intC2Ev[_ZN19Chuck_Instr_Neq_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Neq_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Neq_double::Chuck_Instr_Neq_double()':
+chuck_emit.cpp:(.text._ZN22Chuck_Instr_Neq_doubleC2Ev[_ZN22Chuck_Instr_Neq_doubleC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Neq_double'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Lt_int::Chuck_Instr_Lt_int()':
+chuck_emit.cpp:(.text._ZN18Chuck_Instr_Lt_intC2Ev[_ZN18Chuck_Instr_Lt_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Lt_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Lt_double::Chuck_Instr_Lt_double()':
+chuck_emit.cpp:(.text._ZN21Chuck_Instr_Lt_doubleC2Ev[_ZN21Chuck_Instr_Lt_doubleC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Lt_double'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Le_int::Chuck_Instr_Le_int()':
+chuck_emit.cpp:(.text._ZN18Chuck_Instr_Le_intC2Ev[_ZN18Chuck_Instr_Le_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Le_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Le_double::Chuck_Instr_Le_double()':
+chuck_emit.cpp:(.text._ZN21Chuck_Instr_Le_doubleC2Ev[_ZN21Chuck_Instr_Le_doubleC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Le_double'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_IO_out_int::Chuck_Instr_IO_out_int()':
+chuck_emit.cpp:(.text._ZN22Chuck_Instr_IO_out_intC2Ev[_ZN22Chuck_Instr_IO_out_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_IO_out_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_IO_out_float::Chuck_Instr_IO_out_float()':
+chuck_emit.cpp:(.text._ZN24Chuck_Instr_IO_out_floatC2Ev[_ZN24Chuck_Instr_IO_out_floatC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_IO_out_float'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_IO_out_string::Chuck_Instr_IO_out_string()':
+chuck_emit.cpp:(.text._ZN25Chuck_Instr_IO_out_stringC2Ev[_ZN25Chuck_Instr_IO_out_stringC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_IO_out_string'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Gt_int::Chuck_Instr_Gt_int()':
+chuck_emit.cpp:(.text._ZN18Chuck_Instr_Gt_intC2Ev[_ZN18Chuck_Instr_Gt_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Gt_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Gt_double::Chuck_Instr_Gt_double()':
+chuck_emit.cpp:(.text._ZN21Chuck_Instr_Gt_doubleC2Ev[_ZN21Chuck_Instr_Gt_doubleC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Gt_double'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Ge_int::Chuck_Instr_Ge_int()':
+chuck_emit.cpp:(.text._ZN18Chuck_Instr_Ge_intC2Ev[_ZN18Chuck_Instr_Ge_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Ge_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Ge_double::Chuck_Instr_Ge_double()':
+chuck_emit.cpp:(.text._ZN21Chuck_Instr_Ge_doubleC2Ev[_ZN21Chuck_Instr_Ge_doubleC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Ge_double'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_And::Chuck_Instr_And()':
+chuck_emit.cpp:(.text._ZN15Chuck_Instr_AndC2Ev[_ZN15Chuck_Instr_AndC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_And'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Or::Chuck_Instr_Or()':
+chuck_emit.cpp:(.text._ZN14Chuck_Instr_OrC2Ev[_ZN14Chuck_Instr_OrC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Or'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_IO_in_int::Chuck_Instr_IO_in_int()':
+chuck_emit.cpp:(.text._ZN21Chuck_Instr_IO_in_intC2Ev[_ZN21Chuck_Instr_IO_in_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_IO_in_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_IO_in_float::Chuck_Instr_IO_in_float()':
+chuck_emit.cpp:(.text._ZN23Chuck_Instr_IO_in_floatC2Ev[_ZN23Chuck_Instr_IO_in_floatC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_IO_in_float'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_IO_in_string::Chuck_Instr_IO_in_string()':
+chuck_emit.cpp:(.text._ZN24Chuck_Instr_IO_in_stringC2Ev[_ZN24Chuck_Instr_IO_in_stringC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_IO_in_string'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Event_Wait::Chuck_Instr_Event_Wait()':
+chuck_emit.cpp:(.text._ZN22Chuck_Instr_Event_WaitC2Ev[_ZN22Chuck_Instr_Event_WaitC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Event_Wait'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_UGen_UnLink::Chuck_Instr_UGen_UnLink()':
+chuck_emit.cpp:(.text._ZN23Chuck_Instr_UGen_UnLinkC2Ev[_ZN23Chuck_Instr_UGen_UnLinkC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_UGen_UnLink'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Assign_String::Chuck_Instr_Assign_String()':
+chuck_emit.cpp:(.text._ZN25Chuck_Instr_Assign_StringC2Ev[_ZN25Chuck_Instr_Assign_StringC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Assign_String'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Assign_Primitive::Chuck_Instr_Assign_Primitive()':
+chuck_emit.cpp:(.text._ZN28Chuck_Instr_Assign_PrimitiveC2Ev[_ZN28Chuck_Instr_Assign_PrimitiveC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Assign_Primitive'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Assign_Primitive2::Chuck_Instr_Assign_Primitive2()':
+chuck_emit.cpp:(.text._ZN29Chuck_Instr_Assign_Primitive2C2Ev[_ZN29Chuck_Instr_Assign_Primitive2C5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Assign_Primitive2'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Assign_Primitive4::Chuck_Instr_Assign_Primitive4()':
+chuck_emit.cpp:(.text._ZN29Chuck_Instr_Assign_Primitive4C2Ev[_ZN29Chuck_Instr_Assign_Primitive4C5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Assign_Primitive4'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Assign_Object::Chuck_Instr_Assign_Object()':
+chuck_emit.cpp:(.text._ZN25Chuck_Instr_Assign_ObjectC2Ev[_ZN25Chuck_Instr_Assign_ObjectC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Assign_Object'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_PreInc_int::Chuck_Instr_PreInc_int()':
+chuck_emit.cpp:(.text._ZN22Chuck_Instr_PreInc_intC2Ev[_ZN22Chuck_Instr_PreInc_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_PreInc_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_PreDec_int::Chuck_Instr_PreDec_int()':
+chuck_emit.cpp:(.text._ZN22Chuck_Instr_PreDec_intC2Ev[_ZN22Chuck_Instr_PreDec_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_PreDec_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Complement_int::Chuck_Instr_Complement_int()':
+chuck_emit.cpp:(.text._ZN26Chuck_Instr_Complement_intC2Ev[_ZN26Chuck_Instr_Complement_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Complement_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Not_int::Chuck_Instr_Not_int()':
+chuck_emit.cpp:(.text._ZN19Chuck_Instr_Not_intC2Ev[_ZN19Chuck_Instr_Not_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Not_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Negate_int::Chuck_Instr_Negate_int()':
+chuck_emit.cpp:(.text._ZN22Chuck_Instr_Negate_intC2Ev[_ZN22Chuck_Instr_Negate_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Negate_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Negate_double::Chuck_Instr_Negate_double()':
+chuck_emit.cpp:(.text._ZN25Chuck_Instr_Negate_doubleC2Ev[_ZN25Chuck_Instr_Negate_doubleC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Negate_double'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Reg_Push_Now::Chuck_Instr_Reg_Push_Now()':
+chuck_emit.cpp:(.text._ZN24Chuck_Instr_Reg_Push_NowC2Ev[_ZN24Chuck_Instr_Reg_Push_NowC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Reg_Push_Now'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Reg_Push_This::Chuck_Instr_Reg_Push_This()':
+chuck_emit.cpp:(.text._ZN25Chuck_Instr_Reg_Push_ThisC2Ev[_ZN25Chuck_Instr_Reg_Push_ThisC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Reg_Push_This'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Reg_Push_Me::Chuck_Instr_Reg_Push_Me()':
+chuck_emit.cpp:(.text._ZN23Chuck_Instr_Reg_Push_MeC2Ev[_ZN23Chuck_Instr_Reg_Push_MeC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Reg_Push_Me'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Reg_Push_Maybe::Chuck_Instr_Reg_Push_Maybe()':
+chuck_emit.cpp:(.text._ZN26Chuck_Instr_Reg_Push_MaybeC2Ev[_ZN26Chuck_Instr_Reg_Push_MaybeC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Reg_Push_Maybe'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_DAC::Chuck_Instr_DAC()':
+chuck_emit.cpp:(.text._ZN15Chuck_Instr_DACC2Ev[_ZN15Chuck_Instr_DACC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_DAC'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_ADC::Chuck_Instr_ADC()':
+chuck_emit.cpp:(.text._ZN15Chuck_Instr_ADCC2Ev[_ZN15Chuck_Instr_ADCC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_ADC'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Bunghole::Chuck_Instr_Bunghole()':
+chuck_emit.cpp:(.text._ZN20Chuck_Instr_BungholeC2Ev[_ZN20Chuck_Instr_BungholeC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Bunghole'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Chout::Chuck_Instr_Chout()':
+chuck_emit.cpp:(.text._ZN17Chuck_Instr_ChoutC2Ev[_ZN17Chuck_Instr_ChoutC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Chout'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Cherr::Chuck_Instr_Cherr()':
+chuck_emit.cpp:(.text._ZN17Chuck_Instr_CherrC2Ev[_ZN17Chuck_Instr_CherrC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Cherr'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Cast_double2int::Chuck_Instr_Cast_double2int()':
+chuck_emit.cpp:(.text._ZN27Chuck_Instr_Cast_double2intC2Ev[_ZN27Chuck_Instr_Cast_double2intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Cast_double2int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Cast_int2double::Chuck_Instr_Cast_int2double()':
+chuck_emit.cpp:(.text._ZN27Chuck_Instr_Cast_int2doubleC2Ev[_ZN27Chuck_Instr_Cast_int2doubleC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Cast_int2double'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Cast_int2complex::Chuck_Instr_Cast_int2complex()':
+chuck_emit.cpp:(.text._ZN28Chuck_Instr_Cast_int2complexC2Ev[_ZN28Chuck_Instr_Cast_int2complexC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Cast_int2complex'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Cast_int2polar::Chuck_Instr_Cast_int2polar()':
+chuck_emit.cpp:(.text._ZN26Chuck_Instr_Cast_int2polarC2Ev[_ZN26Chuck_Instr_Cast_int2polarC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Cast_int2polar'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Cast_double2complex::Chuck_Instr_Cast_double2complex()':
+chuck_emit.cpp:(.text._ZN31Chuck_Instr_Cast_double2complexC2Ev[_ZN31Chuck_Instr_Cast_double2complexC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Cast_double2complex'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Cast_double2polar::Chuck_Instr_Cast_double2polar()':
+chuck_emit.cpp:(.text._ZN29Chuck_Instr_Cast_double2polarC2Ev[_ZN29Chuck_Instr_Cast_double2polarC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Cast_double2polar'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Cast_complex2polar::Chuck_Instr_Cast_complex2polar()':
+chuck_emit.cpp:(.text._ZN30Chuck_Instr_Cast_complex2polarC2Ev[_ZN30Chuck_Instr_Cast_complex2polarC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Cast_complex2polar'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Cast_polar2complex::Chuck_Instr_Cast_polar2complex()':
+chuck_emit.cpp:(.text._ZN30Chuck_Instr_Cast_polar2complexC2Ev[_ZN30Chuck_Instr_Cast_polar2complexC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Cast_polar2complex'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Cast_object2string::Chuck_Instr_Cast_object2string()':
+chuck_emit.cpp:(.text._ZN30Chuck_Instr_Cast_object2stringC2Ev[_ZN30Chuck_Instr_Cast_object2stringC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Cast_object2string'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_PostInc_int::Chuck_Instr_PostInc_int()':
+chuck_emit.cpp:(.text._ZN23Chuck_Instr_PostInc_intC2Ev[_ZN23Chuck_Instr_PostInc_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_PostInc_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_PostDec_int::Chuck_Instr_PostDec_int()':
+chuck_emit.cpp:(.text._ZN23Chuck_Instr_PostDec_intC2Ev[_ZN23Chuck_Instr_PostDec_intC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_PostDec_int'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Func_To_Code::Chuck_Instr_Func_To_Code()':
+chuck_emit.cpp:(.text._ZN24Chuck_Instr_Func_To_CodeC2Ev[_ZN24Chuck_Instr_Func_To_CodeC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Func_To_Code'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Func_Call::Chuck_Instr_Func_Call()':
+chuck_emit.cpp:(.text._ZN21Chuck_Instr_Func_CallC2Ev[_ZN21Chuck_Instr_Func_CallC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Func_Call'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Reg_Dup_Last::Chuck_Instr_Reg_Dup_Last()':
+chuck_emit.cpp:(.text._ZN24Chuck_Instr_Reg_Dup_LastC2Ev[_ZN24Chuck_Instr_Reg_Dup_LastC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Reg_Dup_Last'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Pre_Ctor_Array_Bottom::Chuck_Instr_Pre_Ctor_Array_Bottom()':
+chuck_emit.cpp:(.text._ZN33Chuck_Instr_Pre_Ctor_Array_BottomC2Ev[_ZN33Chuck_Instr_Pre_Ctor_Array_BottomC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Pre_Ctor_Array_Bottom'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Pre_Ctor_Array_Post::Chuck_Instr_Pre_Ctor_Array_Post()':
+chuck_emit.cpp:(.text._ZN31Chuck_Instr_Pre_Ctor_Array_PostC2Ev[_ZN31Chuck_Instr_Pre_Ctor_Array_PostC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Pre_Ctor_Array_Post'
+/tmp/ccIPHAjA.o: In function `Chuck_Instr_Func_Return::Chuck_Instr_Func_Return()':
+chuck_emit.cpp:(.text._ZN23Chuck_Instr_Func_ReturnC2Ev[_ZN23Chuck_Instr_Func_ReturnC5Ev]+0x1f): undefined reference to `vtable for Chuck_Instr_Func_Return'
+/tmp/ccIPHAjA.o:(.rodata._ZTV21Chuck_Instr_Binary_Op[_ZTV21Chuck_Instr_Binary_Op]+0x28): undefined reference to `Chuck_Instr::name() const'
+/tmp/ccIPHAjA.o:(.rodata._ZTV21Chuck_Instr_Unary_Op2[_ZTV21Chuck_Instr_Unary_Op2]+0x28): undefined reference to `Chuck_Instr::name() const'
+/tmp/ccIPHAjA.o:(.rodata._ZTV20Chuck_Instr_Unary_Op[_ZTV20Chuck_Instr_Unary_Op]+0x28): undefined reference to `Chuck_Instr::name() const'
+/tmp/ccIPHAjA.o:(.rodata._ZTV21Chuck_Instr_Branch_Op[_ZTV21Chuck_Instr_Branch_Op]+0x28): undefined reference to `Chuck_Instr::name() const'
+/tmp/ccIPHAjA.o:(.rodata._ZTI21Chuck_Instr_Binary_Op[_ZTI21Chuck_Instr_Binary_Op]+0x10): undefined reference to `typeinfo for Chuck_Instr'
+/tmp/ccIPHAjA.o:(.rodata._ZTI21Chuck_Instr_Unary_Op2[_ZTI21Chuck_Instr_Unary_Op2]+0x10): undefined reference to `typeinfo for Chuck_Instr'
+/tmp/ccIPHAjA.o:(.rodata._ZTI20Chuck_Instr_Unary_Op[_ZTI20Chuck_Instr_Unary_Op]+0x10): undefined reference to `typeinfo for Chuck_Instr'
+/tmp/ccIPHAjA.o:(.rodata._ZTI21Chuck_Instr_Branch_Op[_ZTI21Chuck_Instr_Branch_Op]+0x10): undefined reference to `typeinfo for Chuck_Instr'
+/tmp/ccTwDa3r.o: In function `Chuck_Event::queue_broadcast(CBufferSimple*)':
+chuck_oo.cpp:(.text+0x238b): undefined reference to `Chuck_VM::queue_event(Chuck_Event*, int, CBufferSimple*)'
+/tmp/ccTwDa3r.o: In function `Chuck_Event::wait(Chuck_VM_Shred*, Chuck_VM*)':
+chuck_oo.cpp:(.text+0x24f8): undefined reference to `Chuck_VM::shreduler() const'
+chuck_oo.cpp:(.text+0x2503): undefined reference to `Chuck_VM_Shreduler::add_blocked(Chuck_VM_Shred*)'
+/tmp/ccTwDa3r.o: In function `Chuck_IO_File::Chuck_IO_File()':
+chuck_oo.cpp:(.text+0x269f): undefined reference to `initialize_object(Chuck_Object*, Chuck_Type*)'
+/tmp/ccTwDa3r.o: In function `Chuck_IO_File::dirList()':
+chuck_oo.cpp:(.text+0x31d0): undefined reference to `initialize_object(Chuck_Object*, Chuck_Type*)'
+chuck_oo.cpp:(.text+0x320c): undefined reference to `instantiate_and_initialize_object(Chuck_Type*, Chuck_VM_Shred*)'
+chuck_oo.cpp:(.text+0x3323): undefined reference to `initialize_object(Chuck_Object*, Chuck_Type*)'
+/tmp/ccTwDa3r.o: In function `Chuck_IO_Chout::getInstance()':
+chuck_oo.cpp:(.text+0x411e): undefined reference to `initialize_object(Chuck_Object*, Chuck_Type*)'
+/tmp/ccTwDa3r.o: In function `Chuck_IO_Cherr::getInstance()':
+chuck_oo.cpp:(.text+0x438e): undefined reference to `initialize_object(Chuck_Object*, Chuck_Type*)'
+/tmp/ccTwDa3r.o: In function `Chuck_DL_Api::Api::instance()':
+chuck_oo.cpp:(.text._ZN12Chuck_DL_Api3Api8instanceEv[_ZN12Chuck_DL_Api3Api8instanceEv]+0x5): undefined reference to `Chuck_DL_Api::Api::g_api'
+/tmp/cc6O9I3m.o: In function `type_engine_scan2_func_def(Chuck_Env*, a_Func_Def_*)':
+chuck_scan.cpp:(.text+0x3a97): undefined reference to `itoa(long)'
+/tmp/ccfnOXGk.o: In function `init_class_object(Chuck_Env*, Chuck_Type*)':
+chuck_lang.cpp:(.text+0xd6): undefined reference to `make_new_mfun(char const*, char const*, void (*)(Chuck_Object*, void*, Chuck_DL_Return*, Chuck_VM_Shred*, Chuck_DL_Api::Api const*))'
+/tmp/ccfnOXGk.o: In function `init_class_ugen(Chuck_Env*, Chuck_Type*)':
+chuck_lang.cpp:(.text+0x20e): undefined reference to `make_new_mfun(char const*, char const*, void (*)(Chuck_Object*, void*, Chuck_DL_Return*, Chuck_VM_Shred*, Chuck_DL_Api::Api const*))'
+chuck_lang.cpp:(.text+0x25d): undefined reference to `make_new_mfun(char const*, char const*, void (*)(Chuck_Object*, void*, Chuck_DL_Return*, Chuck_VM_Shred*, Chuck_DL_Api::Api const*))'
+chuck_lang.cpp:(.text+0x296): undefined reference to `make_new_mfun(char const*, char const*, void (*)(Chuck_Object*, void*, Chuck_DL_Return*, Chuck_VM_Shred*, Chuck_DL_Api::Api const*))'
+chuck_lang.cpp:(.text+0x2cf): undefined reference to `make_new_mfun(char const*, char const*, void (*)(Chuck_Object*, void*, Chuck_DL_Return*, Chuck_VM_Shred*, Chuck_DL_Api::Api const*))'
+/tmp/ccfnOXGk.o:chuck_lang.cpp:(.text+0x31e): more undefined references to `make_new_mfun(char const*, char const*, void (*)(Chuck_Object*, void*, Chuck_DL_Return*, Chuck_VM_Shred*, Chuck_DL_Api::Api const*))' follow
+/tmp/ccfnOXGk.o: In function `init_class_io(Chuck_Env*, Chuck_Type*)':
+chuck_lang.cpp:(.text+0x134d): undefined reference to `make_new_sfun(char const*, char const*, void (*)(void*, Chuck_DL_Return*, Chuck_VM_Shred*, Chuck_DL_Api::Api const*))'
+chuck_lang.cpp:(.text+0x1386): undefined reference to `make_new_sfun(char const*, char const*, void (*)(void*, Chuck_DL_Return*, Chuck_VM_Shred*, Chuck_DL_Api::Api const*))'
+chuck_lang.cpp:(.text+0x13bf): undefined reference to `make_new_sfun(char const*, char const*, void (*)(void*, Chuck_DL_Return*, Chuck_VM_Shred*, Chuck_DL_Api::Api const*))'
+chuck_lang.cpp:(.text+0x13f8): undefined reference to `initialize_object(Chuck_Object*, Chuck_Type*)'
+/tmp/ccfnOXGk.o: In function `init_class_fileio(Chuck_Env*, Chuck_Type*)':
+chuck_lang.cpp:(.text+0x15db): undefined reference to `make_new_mfun(char const*, char const*, void (*)(Chuck_Object*, void*, Chuck_DL_Return*, Chuck_VM_Shred*, Chuck_DL_Api::Api const*))'
+chuck_lang.cpp:(.text+0x162a): undefined reference to `make_new_mfun(char const*, char const*, void (*)(Chuck_Object*, void*, Chuck_DL_Return*, Chuck_VM_Shred*, Chuck_DL_Api::Api const*))'
+chuck_lang.cpp:(.text+0x168f): undefined reference to `make_new_mfun(char const*, char const*, void (*)(Chuck_Object*, void*, Chuck_DL_Return*, Chuck_VM_Shred*, Chuck_DL_Api::Api const*))'
+chuck_lang.cpp:(.text+0x16c8): undefined reference to `make_new_mfun(char const*, char const*, void (*)(Chuck_Object*, void*, Chuck_DL_Return*, Chuck_VM_Shred*, Chuck_DL_Api::Api const*))'
+chuck_lang.cpp:(.text+0x1701): undefined reference to `make_new_mfun(char const*, char const*, void (*)(Chuck_Object*, void*, Chuck_DL_Return*, Chuck_VM_Shred*, Chuck_DL_Api::Api const*))'
+/tmp/ccfnOXGk.o:chuck_lang.cpp:(.text+0x173a): more undefined references to `make_new_mfun(char const*, char const*, void (*)(Chuck_Object*, void*, Chuck_DL_Return*, Chuck_VM_Shred*, Chuck_DL_Api::Api const*))' follow
+/tmp/ccfnOXGk.o: In function `object_toString':
+chuck_lang.cpp:(.text+0x299c): undefined reference to `instantiate_and_initialize_object(Chuck_Type*, Chuck_VM_Shred*)'
+/tmp/ccfnOXGk.o: In function `ugen_op':
+chuck_lang.cpp:(.text+0x2c0c): undefined reference to `Chuck_UGen::inlet()'
+chuck_lang.cpp:(.text+0x2c22): undefined reference to `Chuck_UGen::inlet()'
+chuck_lang.cpp:(.text+0x2c39): undefined reference to `Chuck_UGen::outlet()'
+chuck_lang.cpp:(.text+0x2c4f): undefined reference to `Chuck_UGen::outlet()'
+/tmp/ccfnOXGk.o: In function `ugen_last':
+chuck_lang.cpp:(.text+0x2ccb): undefined reference to `Chuck_UGen::outlet()'
+chuck_lang.cpp:(.text+0x2ce1): undefined reference to `Chuck_UGen::outlet()'
+/tmp/ccfnOXGk.o: In function `ugen_next':
+chuck_lang.cpp:(.text+0x2df1): undefined reference to `Chuck_UGen::outlet()'
+/tmp/ccfnOXGk.o:chuck_lang.cpp:(.text+0x2e07): more undefined references to `Chuck_UGen::outlet()' follow
+/tmp/ccfnOXGk.o: In function `ugen_connected':
+chuck_lang.cpp:(.text+0x3145): undefined reference to `Chuck_UGen::is_connected_from(Chuck_UGen*)'
+/tmp/ccfnOXGk.o: In function `uana_ctor':
+chuck_lang.cpp:(.text+0x3182): undefined reference to `instantiate_and_initialize_object(Chuck_Type*, Chuck_VM_Shred*)'
+/tmp/ccfnOXGk.o: In function `uana_upchuck':
+chuck_lang.cpp:(.text+0x32c1): undefined reference to `Chuck_VM::shreduler() const'
+chuck_lang.cpp:(.text+0x3345): undefined reference to `Chuck_VM::shreduler() const'
+chuck_lang.cpp:(.text+0x335e): undefined reference to `Chuck_UAna::system_tock(double)'
+chuck_lang.cpp:(.text+0x336a): undefined reference to `Chuck_UAna::blobProxy() const'
+/tmp/ccfnOXGk.o: In function `uana_connected':
+chuck_lang.cpp:(.text+0x362a): undefined reference to `Chuck_UAna::is_up_connected_from(Chuck_UAna*)'
+/tmp/ccfnOXGk.o: In function `uanablob_ctor':
+chuck_lang.cpp:(.text+0x385e): undefined reference to `initialize_object(Chuck_Object*, Chuck_Type*)'
+chuck_lang.cpp:(.text+0x38b2): undefined reference to `initialize_object(Chuck_Object*, Chuck_Type*)'
+/tmp/ccfnOXGk.o: In function `shred_yield':
+chuck_lang.cpp:(.text+0x50df): undefined reference to `Chuck_VM::shreduler() const'
+chuck_lang.cpp:(.text+0x50f7): undefined reference to `Chuck_VM_Shreduler::shredule(Chuck_VM_Shred*, double)'
+/tmp/ccfnOXGk.o: In function `shred_getArg':
+chuck_lang.cpp:(.text+0x51a1): undefined reference to `instantiate_and_initialize_object(Chuck_Type*, Chuck_VM_Shred*)'
+/tmp/ccfnOXGk.o: In function `shred_sourcePath':
+chuck_lang.cpp:(.text+0x52b3): undefined reference to `instantiate_and_initialize_object(Chuck_Type*, Chuck_VM_Shred*)'
+/tmp/ccfnOXGk.o: In function `shred_sourceDir':
+chuck_lang.cpp:(.text+0x531a): undefined reference to `instantiate_and_initialize_object(Chuck_Type*, Chuck_VM_Shred*)'
+chuck_lang.cpp:(.text+0x533c): undefined reference to `extract_filepath_dir(std::string&)'
+/tmp/ccfnOXGk.o: In function `string_upper':
+chuck_lang.cpp:(.text+0x5401): undefined reference to `instantiate_and_initialize_object(Chuck_Type*, Chuck_VM_Shred*)'
+chuck_lang.cpp:(.text+0x541c): undefined reference to `toupper(std::string const&)'
+/tmp/ccfnOXGk.o: In function `string_lower':
+chuck_lang.cpp:(.text+0x54a1): undefined reference to `instantiate_and_initialize_object(Chuck_Type*, Chuck_VM_Shred*)'
+chuck_lang.cpp:(.text+0x54bc): undefined reference to `tolower(std::string const&)'
+/tmp/ccfnOXGk.o: In function `string_ltrim':
+chuck_lang.cpp:(.text+0x5541): undefined reference to `instantiate_and_initialize_object(Chuck_Type*, Chuck_VM_Shred*)'
+chuck_lang.cpp:(.text+0x555c): undefined reference to `ltrim(std::string const&)'
+/tmp/ccfnOXGk.o: In function `string_rtrim':
+chuck_lang.cpp:(.text+0x55e1): undefined reference to `instantiate_and_initialize_object(Chuck_Type*, Chuck_VM_Shred*)'
+chuck_lang.cpp:(.text+0x55fc): undefined reference to `rtrim(std::string const&)'
+/tmp/ccfnOXGk.o: In function `string_trim':
+chuck_lang.cpp:(.text+0x5681): undefined reference to `instantiate_and_initialize_object(Chuck_Type*, Chuck_VM_Shred*)'
+chuck_lang.cpp:(.text+0x569c): undefined reference to `trim(std::string const&)'
+collect2: error: ld returned 1 exit status

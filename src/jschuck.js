@@ -74,15 +74,15 @@
 var jschuck = (function(){
 var parser = {trace: function trace() { },
 yy: {},
-symbols_: {"error":2,"program_section":3,"statement_list":4,"expression_statement":5,"SEMICOLON":6,"chuck_expression":7,"arrow_expression":8,"CHUCK":9,"var_decl_list":10,"ID":11,"$accept":0,"$end":1},
-terminals_: {2:"error",6:"SEMICOLON",9:"CHUCK",11:"ID"},
-productions_: [0,[3,1],[4,1],[4,2],[5,1],[5,2],[7,1],[7,3],[8,1],[8,2],[10,1]],
+symbols_: {"error":2,"program_section":3,"statement_list":4,"EOF":5,"expression_statement":6,"SEMICOLON":7,"chuck_expression":8,"arrow_expression":9,"CHUCK":10,"var_decl_list":11,"ID":12,"NUM":13,"$accept":0,"$end":1},
+terminals_: {2:"error",5:"EOF",7:"SEMICOLON",10:"CHUCK",12:"ID",13:"NUM"},
+productions_: [0,[3,2],[4,1],[4,2],[6,1],[6,2],[8,1],[8,3],[9,1],[9,2],[11,1],[11,1]],
 performAction: function anonymous(yytext, yyleng, yylineno, yy, yystate /* action[1] */, $$ /* vstack */, _$ /* lstack */) {
 /* this == yyval */
 
 var $0 = $$.length - 1;
 switch (yystate) {
-case 1: console.log($$[$0]); 
+case 1: console.log($$[$0-1]); 
 break;
 case 2:this.$=$$[$0];
 break;
@@ -102,10 +102,12 @@ case 9:this.$=[$$[$0-1],$$[$0]];
 break;
 case 10: this.$ = $$[$0]; 
 break;
+case 11: this.$=$$[$0];
+break;
 }
 },
-table: [{3:1,4:2,5:3,6:[1,4],7:5,8:6,10:7,11:[1,8]},{1:[3]},{1:[2,1]},{1:[2,2],4:9,5:3,6:[1,4],7:5,8:6,10:7,11:[1,8]},{1:[2,4],6:[2,4],11:[2,4]},{6:[1,10],9:[1,11]},{6:[2,6],9:[2,6]},{6:[2,8],9:[2,8]},{6:[2,10],9:[2,10],10:12,11:[1,13]},{1:[2,3]},{1:[2,5],6:[2,5],11:[2,5]},{8:14,10:7,11:[1,8]},{6:[2,9],9:[2,9]},{6:[2,10],9:[2,10]},{6:[2,7],9:[2,7]}],
-defaultActions: {2:[2,1],9:[2,3]},
+table: [{3:1,4:2,6:3,7:[1,4],8:5,9:6,11:7,12:[1,8],13:[1,9]},{1:[3]},{5:[1,10]},{4:11,5:[2,2],6:3,7:[1,4],8:5,9:6,11:7,12:[1,8],13:[1,9]},{5:[2,4],7:[2,4],12:[2,4],13:[2,4]},{7:[1,12],10:[1,13]},{7:[2,6],10:[2,6]},{7:[2,8],10:[2,8]},{7:[2,10],10:[2,10],11:14,12:[1,15],13:[1,9]},{7:[2,11],10:[2,11]},{1:[2,1]},{5:[2,3]},{5:[2,5],7:[2,5],12:[2,5],13:[2,5]},{9:16,11:7,12:[1,8],13:[1,9]},{7:[2,9],10:[2,9]},{7:[2,10],10:[2,10]},{7:[2,7],10:[2,7]}],
+defaultActions: {10:[2,1],11:[2,3]},
 parseError: function parseError(str, hash) {
     if (hash.recoverable) {
         this.trace(str);
@@ -570,11 +572,11 @@ var YYSTATE=YY_START;
 switch($avoiding_name_collisions) {
 case 0:/* skip whitespace */
 break;
-case 1:return 11
+case 1:return 12
 break;
-case 2:return 'NUM'
+case 2:return 13
 break;
-case 3:return 9
+case 3:return 10
 break;
 case 4:return 'ARROW_RIGHT'
 break;
@@ -582,14 +584,16 @@ case 5:return 'ARROW_LEFT'
 break;
 case 6:return 'COMMA'
 break;
-case 7:return 'EOF'
+case 7:return 7
 break;
-case 8:return 'INVALID'
+case 8:return 5
+break;
+case 9:return 'INVALID'
 break;
 }
 },
-rules: [/^(?:\s+)/,/^(?:[A-Za-z_][A-Za-z0-9_]*)/,/^(?:[0-9]+)/,/^(?:=>)/,/^(?:->)/,/^(?:<-)/,/^(?:,)/,/^(?:$)/,/^(?:.)/],
-conditions: {"INITIAL":{"rules":[0,1,2,3,4,5,6,7,8],"inclusive":true}}
+rules: [/^(?:\s+)/,/^(?:[A-Za-z_][A-Za-z0-9_]*)/,/^(?:[0-9]+)/,/^(?:=>)/,/^(?:->)/,/^(?:<-)/,/^(?:,)/,/^(?:;)/,/^(?:$)/,/^(?:.)/],
+conditions: {"INITIAL":{"rules":[0,1,2,3,4,5,6,7,8,9],"inclusive":true}}
 };
 return lexer;
 })();
