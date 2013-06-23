@@ -5,19 +5,24 @@
         print: (function() {
           
           return function(text) {
+    var coutput = document.getElementById('coutput');
             text = Array.prototype.slice.call(arguments).join(' ');
-             console.log(text);
+             coutput.value+=text;
           };
         })()
       };
  
 function docompile(){
     var srcselect = document.getElementById('srcselect');
+    var coutput = document.getElementById('coutput');
+    var cinput = document.getElementById('cinput');
     var xhr = new XMLHttpRequest();
     xhr.open("GET",srcselect.value,false);
     xhr.send(null);
-    FS.createDataFile("./","mytest.ck",xhr.responseText,true,true);
-   Module.callMain(["mytest.ck"]);
+    cinput.value=xhr.responseText;
+    coutput.value="";
+    FS.createDataFile("./","tmpi.ck",xhr.responseText,true,true);
+   Module.callMain(["tmpi.ck"]);
 }
 function initcodeselect(){
    var xhr = new XMLHttpRequest();
@@ -37,8 +42,23 @@ function initcodeselect(){
 <script src="chuck_main.js" ></script>
 </head>
 <body onload="initcodeselect()" >
-Source: 
-<select id="srcselect" onchange="docompile();">
-</select>
+<table>
+<tr>
+<td>
+Source:</td></tr>
+<tr><td>
+<select id="srcselect" onchange="docompile();"></td>
+</select></td>
+</tr>
+<tr><td>input</td><td>output</td></tr>
+<tr>
+<td>
+<textarea id="cinput" cols="80" rows="40" ></textarea>
+</td>
+<td>
+<textarea id="coutput" cols="80" rows="40" ></textarea>
+</td>
+</tr>
+</table>
 </body>
 </html>

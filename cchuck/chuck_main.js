@@ -8822,6 +8822,31 @@ function _yydestruct($yymsg, $yytype, $yyvaluep) {
     default: assert(0, "bad label: " + label);
   }
 }
+function _EM_change_file($fname) {
+  var label = 0;
+  label = 2; 
+  while(1) switch(label) {
+    case 2: 
+      var $fname_addr;
+      $fname_addr=$fname;
+      var $0=$fname_addr;
+      var $tobool=(($0)|(0))!=0;
+      if ($tobool) { label = 3; break; } else { label = 4; break; }
+    case 3: 
+      var $1=$fname_addr;
+      var $cond = $1;label = 5; break;
+    case 4: 
+      var $cond = ((11448)|0);label = 5; break;
+    case 5: 
+      var $cond;
+      HEAP32[((274616)>>2)]=$cond;
+      HEAP32[((274632)>>2)]=0;
+      HEAP32[((276696)>>2)]=0;
+      HEAP32[((276704)>>2)]=0;
+      return;
+    default: assert(0, "bad label: " + label);
+  }
+}
 function __Z11open_cat_ckPc($fname) {
   var label = 0;
   label = 2; 
@@ -8872,6 +8897,11 @@ function __Z11open_cat_ckPc($fname) {
       return $9;
     default: assert(0, "bad label: " + label);
   }
+}
+function __Z11reset_parsev() {
+  var label = 0;
+  _EM_change_file(0);
+  return;
 }
 function _EM_newline() {
   var label = 0;
@@ -12050,6 +12080,7 @@ function _main($argc, $argv) {
       var $call2=__Z11chuck_parsePKcP7__sFILES0_($5, 0, 0);
       var $6=HEAP32[((10624)>>2)];
       __Z15dump_astProgramP10a_Program_($6);
+      __Z11reset_parsev();
       label = 4; break;
     case 4: 
       STACKTOP = __stackBase__;

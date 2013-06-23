@@ -45,6 +45,7 @@ int main(int argc,char* argv[]){
     fprintf(stderr,"processing file %s\n",argv[1]);
    chuck_parse(argv[1],NULL,0);
    dump_astProgram(g_program);
+   reset_parse();   
   }
    return 0;
 }
