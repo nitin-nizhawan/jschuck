@@ -1,0 +1,44 @@
+<html>
+<head>
+<script>
+      var Module = {
+        print: (function() {
+          
+          return function(text) {
+            text = Array.prototype.slice.call(arguments).join(' ');
+             console.log(text);
+          };
+        })()
+      };
+ 
+function docompile(){
+    var srcselect = document.getElementById('srcselect');
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET",srcselect.value,false);
+    xhr.send(null);
+    FS.createDataFile("./","mytest.ck",xhr.responseText,true,true);
+   Module.callMain(["mytest.ck"]);
+}
+function initcodeselect(){
+   var xhr = new XMLHttpRequest();
+    xhr.open("GET","filelist.json",false);
+    xhr.send(null);
+    var filelist = JSON.parse(xhr.responseText);
+    var srcselect = document.getElementById('srcselect');
+    for(var i=0;i<filelist.list.length;i++){
+         var fl = filelist.list[i];
+                var opt = document.createElement('option');
+                opt.innerHTML=fl;
+                opt.value=fl;
+                srcselect.appendChild(opt);
+    }
+}
+</script>
+<script src="chuck_main.js" ></script>
+</head>
+<body onload="initcodeselect()" >
+Source: 
+<select id="srcselect" onchange="docompile();">
+</select>
+</body>
+</html>
